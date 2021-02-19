@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Magician extends Fighters {
     String classesName = "Magician";
     
@@ -18,5 +21,9 @@ public class Magician extends Fighters {
 
     public void start() {
         this.init(this.classesName);
+    }
+
+    public Map<String, Object> getStats() {
+        return this.stats; 
     }
 }
